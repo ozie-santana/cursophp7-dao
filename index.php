@@ -32,11 +32,21 @@ echo json_encode($lista);
 
 //echo $aluno;
 
+//Alterar um usuario
+/*
 $usuario = new Usuario();
 
 $usuario->loadbyId(8);
 
 $usuario->update("professor", "!@#$%");
+
+echo $usuario;
+*/
+$usuario = new Usuario();
+
+$usuario->loadbyId(17);
+
+$usuario->delete();
 
 echo $usuario;
 
