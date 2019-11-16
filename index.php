@@ -19,10 +19,26 @@ echo json_encode($lista);
 //echo json_encode($search);
 
 
-//Garrega usuário usando login e senha 
-$usuario = new Usuario();
-$usuario->login("santana", "123");
+###//Garrega usuário usando login e senha 
+//$usuario = new Usuario();
+//$usuario->login("oziel", "121212");
 
-echo $usuario
+//echo $usuario
+
+//Inserindo dados no banco
+//$aluno = new Usuario("oziel", "fer123");
+
+//$aluno->insert();
+
+//echo $aluno;
+
+$usuario = new Usuario();
+
+$usuario->loadbyId(8);
+
+$usuario->update("professor", "!@#$%");
+
+echo $usuario;
+
 
 ?>
